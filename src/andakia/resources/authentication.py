@@ -28,7 +28,7 @@ class AuthenticationResource(SyncAPIResource):
     @cached_property
     def with_raw_response(self) -> AuthenticationResourceWithRawResponse:
         """
-        This property can be used as a prefix for any HTTP method call to return the
+        This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
         For more information, see https://www.github.com/andakia/andakia-python#accessing-raw-response-data-eg-headers
@@ -89,7 +89,7 @@ class AsyncAuthenticationResource(AsyncAPIResource):
     @cached_property
     def with_raw_response(self) -> AsyncAuthenticationResourceWithRawResponse:
         """
-        This property can be used as a prefix for any HTTP method call to return the
+        This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
         For more information, see https://www.github.com/andakia/andakia-python#accessing-raw-response-data-eg-headers
