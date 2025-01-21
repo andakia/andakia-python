@@ -32,10 +32,10 @@ class PurchasesResource(SyncAPIResource):
     @cached_property
     def with_raw_response(self) -> PurchasesResourceWithRawResponse:
         """
-        This property can be used as a prefix for any HTTP method call to return the
+        This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/stainless-sdks/andakia-python#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/andakia/andakia-python#accessing-raw-response-data-eg-headers
         """
         return PurchasesResourceWithRawResponse(self)
 
@@ -44,7 +44,7 @@ class PurchasesResource(SyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/stainless-sdks/andakia-python#with_streaming_response
+        For more information, see https://www.github.com/andakia/andakia-python#with_streaming_response
         """
         return PurchasesResourceWithStreamingResponse(self)
 
@@ -139,10 +139,10 @@ class AsyncPurchasesResource(AsyncAPIResource):
     @cached_property
     def with_raw_response(self) -> AsyncPurchasesResourceWithRawResponse:
         """
-        This property can be used as a prefix for any HTTP method call to return the
+        This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/stainless-sdks/andakia-python#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/andakia/andakia-python#accessing-raw-response-data-eg-headers
         """
         return AsyncPurchasesResourceWithRawResponse(self)
 
@@ -151,7 +151,7 @@ class AsyncPurchasesResource(AsyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/stainless-sdks/andakia-python#with_streaming_response
+        For more information, see https://www.github.com/andakia/andakia-python#with_streaming_response
         """
         return AsyncPurchasesResourceWithStreamingResponse(self)
 
