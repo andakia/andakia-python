@@ -29,10 +29,10 @@ class LanguageUnderstandingResource(SyncAPIResource):
     @cached_property
     def with_raw_response(self) -> LanguageUnderstandingResourceWithRawResponse:
         """
-        This property can be used as a prefix for any HTTP method call to return the
+        This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/stainless-sdks/andakia-python#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/andakia/andakia-python#accessing-raw-response-data-eg-headers
         """
         return LanguageUnderstandingResourceWithRawResponse(self)
 
@@ -41,7 +41,7 @@ class LanguageUnderstandingResource(SyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/stainless-sdks/andakia-python#with_streaming_response
+        For more information, see https://www.github.com/andakia/andakia-python#with_streaming_response
         """
         return LanguageUnderstandingResourceWithStreamingResponse(self)
 
@@ -92,10 +92,10 @@ class AsyncLanguageUnderstandingResource(AsyncAPIResource):
     @cached_property
     def with_raw_response(self) -> AsyncLanguageUnderstandingResourceWithRawResponse:
         """
-        This property can be used as a prefix for any HTTP method call to return the
+        This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/stainless-sdks/andakia-python#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/andakia/andakia-python#accessing-raw-response-data-eg-headers
         """
         return AsyncLanguageUnderstandingResourceWithRawResponse(self)
 
@@ -104,7 +104,7 @@ class AsyncLanguageUnderstandingResource(AsyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/stainless-sdks/andakia-python#with_streaming_response
+        For more information, see https://www.github.com/andakia/andakia-python#with_streaming_response
         """
         return AsyncLanguageUnderstandingResourceWithStreamingResponse(self)
 

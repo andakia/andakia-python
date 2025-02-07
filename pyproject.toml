@@ -1,6 +1,6 @@
 [project]
 name = "andakia"
-version = "0.0.1-alpha.0"
+version = "0.1.0-alpha.1"
 description = "The official Python library for the andakia API"
 dynamic = ["readme"]
 license = "Apache-2.0"
@@ -34,8 +34,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/stainless-sdks/andakia-python"
-Repository = "https://github.com/stainless-sdks/andakia-python"
+Homepage = "https://github.com/andakia/andakia-python"
+Repository = "https://github.com/andakia/andakia-python"
 
 
 
@@ -122,13 +122,14 @@ path = "README.md"
 [[tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions]]
 # replace relative links with absolute links
 pattern = '\[(.+?)\]\(((?!https?://)\S+?)\)'
-replacement = '[\1](https://github.com/stainless-sdks/andakia-python/tree/main/\g<2>)'
+replacement = '[\1](https://github.com/andakia/andakia-python/tree/main/\g<2>)'
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--tb=short"
 xfail_strict = true
 asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
 filterwarnings = [
   "error"
 ]
@@ -176,7 +177,7 @@ select = [
   "T201",
   "T203",
   # misuse of typing.TYPE_CHECKING
-  "TCH004",
+  "TC004",
   # import rules
   "TID251",
 ]
